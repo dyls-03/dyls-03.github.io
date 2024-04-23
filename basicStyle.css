@@ -1,12 +1,14 @@
 body {
   background-color: #171717;
   font-family: verdana;
+  text-align: center;
 }
 
 h1 {
   color: white;
-  text-align: center;
+  
 }
 
 p {
+  color: #808080;
 }
