@@ -1,0 +1,219 @@
+
+
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title>
+        HTML DOM Audio Volume Property
+    </title>
+</head>
+ 
+<body style="text-align: center">
+
+
+
+    <h2 style="font-family: Impact">
+        HTML DOM Audio Volume Property
+    </h2>
+    <br>
+    <audio id="Test_Audio" controls>
+        <source src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20190531165842/Recording1514.ogg"
+                type="audio/ogg">
+        <source src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20190531165842/Recording1514.mp3"
+                type="audio/mpeg">
+    </audio>
+    <br>
+    <button onclick="volume()" type="button">
+        Return Volume
+    </button>
+    <button onclick="Set_vol1()" type="button">
+        Set HalfVolume
+    </button>
+    <button onclick="Set_vol2()" type="button">
+        Set Fullvolume
+    </button>
+    <br>
+    <br>
+
+
+    <p id="lblRandVol">Current Volume Level: 0%</p>
+    <button onclick="genRandVol()">Change</button>
+
+    <br>
+    <br>
+    <p>Advanced Volume Control</p>
+    <table>
+        <tr>
+          <td><input type="radio" name="r1" aria-labelledby="row1 col1">1</td>
+          <td><input type="radio" name="r1" aria-labelledby="row1 col2">2</td>
+          <td><input type="radio" name="r1" aria-labelledby="row1 col3">3</td>
+          <td><input type="radio" name="r1">4</td>
+          <td><input type="radio" name="r1">5</td>
+          <td><input type="radio" name="r1">6</td>
+          <td><input type="radio" name="r1">7</td>
+          <td><input type="radio" name="r1">8</td>
+          <td><input type="radio" name="r1">9</td>
+          <td><input type="radio" name="r1">10</td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="r1">11</td>
+            <td><input type="radio" name="r1">12</td>
+            <td><input type="radio" name="r1">13</td>
+            <td><input type="radio" name="r1">14</td>
+            <td><input type="radio" name="r1">15</td>
+            <td><input type="radio" name="r1">16</td>
+            <td><input type="radio" name="r1">17</td>
+            <td><input type="radio" name="r1">18</td>
+            <td><input type="radio" name="r1">19</td>
+            <td><input type="radio" name="r1">20</td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="r1">21</td>
+            <td><input type="radio" name="r1">22</td>
+            <td><input type="radio" name="r1">23</td>
+            <td><input type="radio" name="r1">24</td>
+            <td><input type="radio" name="r1">25</td>
+            <td><input type="radio" name="r1">26</td>
+            <td><input type="radio" name="r1">27</td>
+            <td><input type="radio" name="r1">28</td>
+            <td><input type="radio" name="r1">29</td>
+            <td><input type="radio" name="r1">30</td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="r1">31</td>
+            <td><input type="radio" name="r1">32</td>
+            <td><input type="radio" name="r1">33</td>
+            <td><input type="radio" name="r1">34</td>
+            <td><input type="radio" name="r1">35</td>
+            <td><input type="radio" name="r1">36</td>
+            <td><input type="radio" name="r1">37</td>
+            <td><input type="radio" name="r1">38</td>
+            <td><input type="radio" name="r1">39</td>
+            <td><input type="radio" name="r1">40</td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="r1">11</td>
+            <td><input type="radio" name="r1">12</td>
+            <td><input type="radio" name="r1">13</td>
+            <td><input type="radio" name="r1">14</td>
+            <td><input type="radio" name="r1">15</td>
+            <td><input type="radio" name="r1">16</td>
+            <td><input type="radio" name="r1">17</td>
+            <td><input type="radio" name="r1">18</td>
+            <td><input type="radio" name="r1">19</td>
+            <td><input type="radio" name="r1">20</td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="r1">21</td>
+            <td><input type="radio" name="r1">22</td>
+            <td><input type="radio" name="r1">23</td>
+            <td><input type="radio" name="r1">24</td>
+            <td><input type="radio" name="r1">25</td>
+            <td><input type="radio" name="r1">26</td>
+            <td><input type="radio" name="r1">27</td>
+            <td><input type="radio" name="r1">28</td>
+            <td><input type="radio" name="r1">29</td>
+            <td><input type="radio" name="r1">30</td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="r1">41</td>
+            <td><input type="radio" name="r1">42</td>
+            <td><input type="radio" name="r1">43</td>
+            <td><input type="radio" name="r1">44</td>
+            <td><input type="radio" name="r1">45</td>
+            <td><input type="radio" name="r1">46</td>
+            <td><input type="radio" name="r1">47</td>
+            <td><input type="radio" name="r1">48</td>
+            <td><input type="radio" name="r1">49</td>
+            <td><input type="radio" name="r1">40</td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="r1">51</td>
+            <td><input type="radio" name="r1">52</td>
+            <td><input type="radio" name="r1">53</td>
+            <td><input type="radio" name="r1">54</td>
+            <td><input type="radio" name="r1">55</td>
+            <td><input type="radio" name="r1">56</td>
+            <td><input type="radio" name="r1">57</td>
+            <td><input type="radio" name="r1">58</td>
+            <td><input type="radio" name="r1">59</td>
+            <td><input type="radio" name="r1">60</td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="r1">61</td>
+            <td><input type="radio" name="r1">62</td>
+            <td><input type="radio" name="r1">63</td>
+            <td><input type="radio" name="r1">64</td>
+            <td><input type="radio" name="r1">65</td>
+            <td><input type="radio" name="r1">66</td>
+            <td><input type="radio" name="r1">67</td>
+            <td><input type="radio" name="r1">68</td>
+            <td><input type="radio" name="r1">69</td>
+            <td><input type="radio" name="r1">70</td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="r1">71</td>
+            <td><input type="radio" name="r1">72</td>
+            <td><input type="radio" name="r1">73</td>
+            <td><input type="radio" name="r1">74</td>
+            <td><input type="radio" name="r1">75</td>
+            <td><input type="radio" name="r1">76</td>
+            <td><input type="radio" name="r1">77</td>
+            <td><input type="radio" name="r1">78</td>
+            <td><input type="radio" name="r1">79</td>
+            <td><input type="radio" name="r1">80</td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="r1">81</td>
+            <td><input type="radio" name="r1">82</td>
+            <td><input type="radio" name="r1">83</td>
+            <td><input type="radio" name="r1">84</td>
+            <td><input type="radio" name="r1">85</td>
+            <td><input type="radio" name="r1">86</td>
+            <td><input type="radio" name="r1">87</td>
+            <td><input type="radio" name="r1">88</td>
+            <td><input type="radio" name="r1">89</td>
+            <td><input type="radio" name="r1">90</td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="r1">91</td>
+            <td><input type="radio" name="r1">92</td>
+            <td><input type="radio" name="r1">93</td>
+            <td><input type="radio" name="r1">94</td>
+            <td><input type="radio" name="r1">95</td>
+            <td><input type="radio" name="r1">96</td>
+            <td><input type="radio" name="r1">97</td>
+            <td><input type="radio" name="r1">98</td>
+            <td><input type="radio" name="r1">99</td>
+            <td><input type="radio" name="r1">100</td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="r1">Mute</td>
+        </tr>
+      </table>
+
+   
+    <script>
+        let lblRandVol = document.getElementById("lblRandVol");
+        function genRandVol()
+        {
+            lblRandVol.innerText = "Current Volume Level: " + Math.floor(Math.random() * 100) + "%";
+        }
+
+        let gfg = document.getElementById("Test_Audio");
+        function volume() {
+            alert(gfg.volume);
+        }
+        function Set_vol1() {
+            gfg.volume = 0.5;
+        }
+        function Set_vol2() {
+            gfg.volume = 1.0;
+        }
+    </script>
+</body>
+ 
+</html>
