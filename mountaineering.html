@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mountaineering</title>
+  <link href="styles\siteNotice.css" rel="stylesheet">
+  <link href="styles\mountainStyle.css" rel="stylesheet">
+</head>
+
+<div class="site-notice">
+    🚧 This website is still under development. Some features may not work yet. 🚧
+</div>
+
+<br>
+<br>
+
+<body>
+  <div class="progress-container">
+    <div class="progress-bar" id="progress-bar"></div>
+    <div class="progress-text" id="progress-text"></div>
+  </div>
+
+  
+
+  <script>
+    const currentValue = 1245;
+    const maxValue = 8448;
+    const percentage = (currentValue / maxValue) * 100;
+
+    const bar = document.getElementById("progress-bar");
+    const text = document.getElementById("progress-text");
+
+    bar.style.width = percentage + "%";
+    text.textContent = `${currentValue}m / ${maxValue}m`;
+  </script>
+</body>
+</html>
