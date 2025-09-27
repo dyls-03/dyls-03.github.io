@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Gallery — Albums</title>
+    <link href="styles\navBarStyle.css" rel="stylesheet">
+    <link href="styles\siteNotice.css" rel="stylesheet">
     <style>
       /* ---------- Base / Theme ---------- */
       :root {
@@ -126,6 +128,34 @@
     </style>
   </head>
   <body>
+
+    <header class="topbar">
+        <div class="wrap topbar-row">
+          <div class="brand" style="gap:10px;">
+            <span class="login">DYLAN VAL</span>
+          </div>
+    
+          <div class="nav-wrap">
+                <input id="nav-toggle" type="checkbox" aria-hidden="true">
+                <label class="hambtn" for="nav-toggle" aria-label="Toggle menu">
+                <span class="hamburger"><span></span></span>
+                </label>
+        
+                <nav class="wrap-in">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="#">Gallery</a></li>
+                </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="site-notice">
+    🚧 This website is still under development. Some features may not work yet. 🚧
+    </div>
+
+
     <div class="container">
       <header class="page" aria-label="Gallery header">
         <div>

@@ -38,44 +38,6 @@
     padding-right: calc(env(safe-area-inset-right) + var(--gutter));
   }
 
-  /* topbar */
-  .topbar{
-    position:sticky; top:0; z-index:30;
-    background: color-mix(in oklab, var(--bg-2) 88%, black 12%);
-    border-bottom:1px solid rgba(255,255,255,.06);
-    padding-top: calc(env(safe-area-inset-top) + 10px);
-    padding-bottom:10px;
-  }
-  .topbar-row{ display:flex; align-items:center; justify-content:space-between; gap:16px }
-  .brand{ display:flex; align-items:center; gap:12px; color:var(--text-1); font-weight:600; letter-spacing:.18em }
-  .brand .logo{
-    width:28px;height:28px;border-radius:50%;display:grid;place-items:center;
-    background:#0f1114;color:#fff;font-weight:800;box-shadow:inset 0 0 0 1px rgba(255,255,255,.06)
-  }
-  .login{ white-space:nowrap; color:var(--text-1); font-size:13px }
-
-  #nav-toggle{ position:absolute; left:-9999px }
-  .hambtn{ width:44px;height:44px;display:grid;place-items:center;border-radius:10px;border:1px solid rgba(255,255,255,.08);background:#14171a;cursor:pointer }
-  .hamburger{ width:18px;height:14px;position:relative }
-  .hamburger::before,.hamburger::after,.hamburger span{ content:""; position:absolute; left:0; right:0; height:2px; background:#c9ccd3; border-radius:2px }
-  .hamburger::before{ top:0 } .hamburger span{ top:6px } .hamburger::after{ bottom:0 }
-
-  nav{ display:flex; align-items:center; gap:28px }
-  nav a{ text-decoration:none; color:#aeb3bb; font-weight:600; font-size:14px; letter-spacing:.04em; padding:10px 2px; position:relative; line-height:1 }
-  nav a:hover, nav a:focus-visible{ color:#fff }
-  .active::after{ content:""; position:absolute; left:0; right:0; bottom:-8px; height:2px; background:var(--accent); border-radius:2px }
-
-  .nav-wrap{ display:flex; align-items:center; gap:18px }
-  @media (max-width:860px){
-    nav{
-      position:fixed; inset: calc(56px + env(safe-area-inset-top)) 0 auto 0;
-      background:#14171a; border-bottom:1px solid rgba(255,255,255,.08);
-      padding:10px var(--gutter); display:none;
-    }
-    #nav-toggle:checked + label + nav{ display:flex }
-    nav ul{ width:100% }
-  }
-  nav ul{ display:flex; gap:28px; list-style:none; padding:0; margin:0; align-items:center; flex-wrap:wrap }
 
   /* main grid */
   main{ padding: 26px 0 24px }
