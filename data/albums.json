@@ -1,0 +1,60 @@
+{
+    "albums": [
+        {
+        "id": "snowdon",
+        "title": "Snowdon",
+        "date": "2024-09-27",
+        "folder": "images/gallery/snowdon",
+        "cover": "images/gallery/covers/cribGoch.jpg"
+        },
+        {
+        "id": "cairnGorm",
+        "title": "Cairn Gorm",
+        "date": "2025-02-02",
+        "folder": "images/gallery/cairnGorm",
+        "cover": "images/gallery/covers/cairnGorm.jpg"
+        },
+        {
+        "id": "siabod",
+        "title": "Moel Siabod",
+        "date": "2025-02-15",
+        "folder": "images/gallery/siabod",
+        "cover": "images/gallery/covers/siabod.jpg"
+        },
+        {
+        "id": "dorset",
+        "title": "Dorset",
+        "date": "2025-09-21",
+        "folder": "images/gallery/dorset",
+        "cover": "images/gallery/covers/dorset.jpg"
+        },
+        {
+        "id": "pembroke",
+        "title": "Pembroke",
+        "date": "2025-07-03",
+        "folder": "images/gallery/pembroke",
+        "cover": "images/gallery/covers/pembroke.jpg"
+        },
+        {
+        "id": "newquay",
+        "title": "Newquay",
+        "date": "2025-07-13",
+        "folder": "images/gallery/newquay",
+        "cover": "images/gallery/covers/newquay.jpg"
+        },
+        {
+        "id": "roaches",
+        "title": "Roaches",
+        "date": "2025-06-18",
+        "folder": "images/gallery/roaches",
+        "cover": "images/gallery/covers/roaches.jpg"
+        },
+        {
+        "id": "valT",
+        "title": "Val Thorens",
+        "date": "2025-03-29",
+        "folder": "images/gallery/valT",
+        "cover": "images/gallery/covers/valT.jpg"
+        }
+    ]
+}
