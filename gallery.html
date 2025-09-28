@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gallery — Albums</title>
+    <link href="styles/navBarStyle.css" rel="stylesheet">
+    <link href="styles/indexStyle.css" rel="stylesheet">
+    <link href="styles/siteNotice.css" rel="stylesheet">
+    <link href="styles/galleryStyle.css" rel="stylesheet">
+    
+  </head>
+  <body>
+
+    <header class="topbar">
+        <div class="wrap topbar-row">
+          <div class="brand" style="gap:10px;">
+            <span class="login">DYLAN VAL</span>
+          </div>
+    
+          <div class="nav-wrap">
+                <input id="nav-toggle" type="checkbox" aria-hidden="true">
+                <label class="hambtn" for="nav-toggle" aria-label="Toggle menu">
+                <span class="hamburger"><span></span></span>
+                </label>
+        
+                <nav class="wrap-in">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="#">Gallery</a></li>
+                </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="site-notice">
+    🚧 This website is still under development. Some features may not work yet. 🚧
+    </div>
+
+
+    <div class="container">
+      <header class="page" aria-label="Gallery header">
+        <div>
+          <h1>Gallery</h1>
+          <div class="subtle" id="album-count" aria-live="polite">4 albums</div>
+        </div>
+        <div class="controls" role="group" aria-label="Search and sort">
+          <label class="control" for="search">
+            <span class="sr-only">Search</span>
+            <input id="search" type="search" placeholder="Search albums..." autocomplete="off" />
+          </label>
+          <label class="control" for="sort">
+            <span class="sr-only">Sort</span>
+            <select id="sort" aria-label="Sort albums">
+              <option value="newest">Newest</option>
+              <option value="oldest">Oldest</option>
+              <option value="az">A → Z</option>
+              <option value="za">Z → A</option>
+            </select>
+          </label>
+        </div>
+      </header>
+
+      <main class="grid" id="grid" aria-live="polite">
+
+      </main>
+    </div>
+
+        <script src="scripts/loadAlbums.js"></script>
+    </body>
+</html>
