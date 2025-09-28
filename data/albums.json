@@ -26,7 +26,7 @@
         "title": "Dorset",
         "date": "2025-09-21",
         "folder": "images/gallery/dorset",
-        "cover": "images/gallery/covers/dorset.JPEG"
+        "cover": "images/gallery/covers/dorset.jpg"
         },
         {
         "id": "pembroke",
@@ -40,7 +40,7 @@
         "title": "Newquay",
         "date": "2025-07-13",
         "folder": "images/gallery/newquay",
-        "cover": "images/gallery/covers/newquay.PNG"
+        "cover": "images/gallery/covers/newquay.png"
         },
         {
         "id": "roaches",
