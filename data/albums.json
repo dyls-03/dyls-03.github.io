@@ -19,14 +19,14 @@
         "title": "Moel Siabod",
         "date": "2025-02-15",
         "folder": "images/gallery/siabod",
-        "cover": "images/gallery/covers/siabod.jpeg"
+        "cover": "images/gallery/covers/siabod.JPEG"
         },
         {
         "id": "dorset",
         "title": "Dorset",
         "date": "2025-09-21",
         "folder": "images/gallery/dorset",
-        "cover": "images/gallery/covers/dorset.jpeg"
+        "cover": "images/gallery/covers/dorset.JPEG"
         },
         {
         "id": "pembroke",
@@ -40,7 +40,7 @@
         "title": "Newquay",
         "date": "2025-07-13",
         "folder": "images/gallery/newquay",
-        "cover": "images/gallery/covers/newquay.png"
+        "cover": "images/gallery/covers/newquay.PNG"
         },
         {
         "id": "roaches",
